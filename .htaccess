@@ -7,5 +7,15 @@ Deny from all
 </Files>
 
 <ifModule mod_expires.c>
+	ExpiresActive On
+
+	ExpiresByType image/x-icon "access plus 1 years"
+	ExpiresByType image/jpeg "access plus 1 years"
+	ExpiresByType image/jpg "access 1 year"
+	ExpiresByType image/png "access plus 1 years"
+	ExpiresByType image/gif "access plus 1 years"
+	ExpiresByType image/webp "access plus 1 years"
+	ExpiresByType image/svg "access plus 1 years"
+	ExpiresByType image/svg+xml "access plus 1 years"
 	ExpiresDefault "access plus 1 year"
 </ifModule>
