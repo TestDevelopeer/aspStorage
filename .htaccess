@@ -1,7 +1,7 @@
 Order Deny,Allow
 Deny from all
 
-<Files ~ "\.(jpg|jpeg|gif|png|webp|doc|docx|pdf|xls)$">
+<Files ~ "\.(jpg|jpeg|gif|png|webp|doc|docx|pdf|xls|webm|mp4)$">
 	Order Deny,Allow
 	Allow from all
 </Files>
